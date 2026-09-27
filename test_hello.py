@@ -1,4 +1,4 @@
-from hello1 import add
+from hello import add
 
 
 def test_add():
