@@ -3,8 +3,9 @@ name: Hello
 on: push
 
 jobs:
-  greet:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: python3 hello.py
+      - run: pip install pytest
+      - run: pytest
